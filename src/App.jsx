@@ -18,11 +18,13 @@ import { MapPin } from 'lucide-react';
 import { MessageCircle } from 'lucide-react';
 import { Navigation } from 'lucide-react';
 
+
 function App() {
   
 
   return (
     <>
+      {/* header section*/}
    <header className='w-full custom-flex bg-primary '>
    <div className='  custom-container flex justify-between  px-2 max-md:responsive-mid'> 
       <div>
@@ -42,7 +44,7 @@ function App() {
    <section className='w-full custom-flex py-4 bg-white'>
    <div className='custom-container  px-2 '>
       <div className='text-black flex justify-around px-6 h-[8rem] max-md:flex max-md:flex-col max-md:items-center'>
-          <div className='mt-4 w-50 h-auto max-md:w-32'><img src='/dsi-logo-large-1.1-300x86.png'></img></div>
+          <div className='mt-4 w-50 h-auto max-md:w-32'><img src='image/dsi-logo-large-1.1-300x86.png'></img></div>
           <div className='flex gap-10 max-sm:text-[10px]'>
           <div className='flex justify-center items-center gap-4'>
           <Phone className='text-secondary'/>
@@ -87,14 +89,19 @@ function App() {
       </div>
       </header>
    
+{/* header section end*/}
+
+
+{/* Dream Study International section*/}
+
 
 
    <section className='w-full custom-flex py-10'>
     <div className='custom-container  px-2 '>
-    <div className='flex justify-center h-20 my-6'> <img src='/dsi-logo-large-1.1.png'></img></div>
+    <div className='flex justify-center h-20 my-6'> <img src='image/dsi-logo-large-1.1.png'></img></div>
     <div className='flex  gap-8 pt-6 max-md:flex max-md:flex-col max-md:items-center'> 
       <div className='w-[57%]  pt-7 ml-6 max-md:w-[80%]'>
-          <img src='\In-House-Edu-Expo-May25-Dream-Study-International-1536x864.jpg'></img>
+          <img src='image/In-House-Edu-Expo-May25-Dream-Study-International-1536x864.jpg'></img>
       </div>
       <div className='w-[31rem] '>
         <div className='bg-[#24579f] text-[36px] font-bold rounded-t-lg pl-6 py-2'>Apply Now!</div>
@@ -125,12 +132,15 @@ function App() {
     </div>
    </section>
 
+{/* Dream Study International section end*/}
 
+
+{/*We Offer One Stop Solution section*/}
 
    <section className='w-full custom-flex py-4 '>
     <div className='custom-container  px-2 '>
       
-        <div className='flex justify-center'><img src='/one-stop-768x100.png'></img></div>
+        <div className='flex justify-center'><img src='image/one-stop-768x100.png'></img></div>
         <div className='text-black flex gap-4 flex-wrap justify-center pt-20'>
           <div className='card bg-gray-600 text-white rounded-lg hover:bg-opacity-0 hover:text-black shadow-2xl'>
           <BookCheck className='cardIcon'/>
@@ -168,12 +178,15 @@ function App() {
     </div>
     </section>
 
+{/*We Offer One Stop Solution section end*/}
 
+
+{/*footer start*/}
     <section className='w-full custom-flex pt-36 pb-20'>
     <div className='custom-container  px-2 '>
     <div className='flex gap-5 flex-wrap justify-evenly'>
         <div className='w-96  flex flex-col gap-8 '>
-              <img src='/dsi-logo-large-1.1-300x86.png' className='w-80'></img>
+              <img src='image/dsi-logo-large-1.1-300x86.png' className='w-80'></img>
              <div className='w-[22rem]'>
              <p className='text-black text-[18px] text-justify'>
               We are renowned education consultancy for prospective students who would like to study in CANADA, UK, USA, Australia, Sweden, Netherlands, Denmark & other European Countries
@@ -220,7 +233,7 @@ function App() {
         </div>
         <div className='w-96  bg-white text-black rounded-[2rem]'>
             <div className='my-6 mx-4'>
-                <img src='capture.PNG'></img>
+                <img src='image/Capture.png'></img>
             </div>
             <div className='flex pl-5 my-4'>
                 <MapPin className='w-10 mt-3 mr-4 text-secondary'/>
@@ -252,7 +265,10 @@ function App() {
      </div>
     </div>
     </section>
+
+    {/*footer end*/}
     </>
+    
   )
 }
 
