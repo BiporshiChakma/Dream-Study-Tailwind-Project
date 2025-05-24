@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body{
+    @apply text-white bg-[#f1f4f9];
+}
+
+  
+@layer components {
+    .custom-container {
+      @apply w-[1350px];
+    };
+    .custom-flex{
+        @apply flex justify-center;
+    };
+    .custom-border{
+        @apply  border-slate-700 py-3;
+    }
+    .responsive-mid{
+        @apply w-full flex  flex-col justify-center items-center gap-2;
+    }
+    .custom-input{
+        @apply w-[26rem] p-2 border rounded-lg text-black flex items-center gap-4 focus-within:border-blue-500 focus-within:ring-1 focus-within:ring-blue-500;
+    }
+    .customInput{
+        @apply w-[26rem] py-2 outline-none bg-third placeholder-gray-700;
+    }
+    .card{
+        @apply w-[19rem] h-28 text-[18px] font-Aldrich flex flex-col gap-4 justify-center items-center transition duration-300 ease-in-out
+        hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
+        hover:border-b-4 border-secondary;
+
+    }
+    .cardIcon{
+        @apply w-12 h-11 text-secondary;
+    }
+  }
